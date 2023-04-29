@@ -5,12 +5,14 @@ import { Col, Container, Row } from 'react-bootstrap';
 import LeftNav from '../pages/Shared/LeftNav/LeftNav';
 import RightNav from '../pages/Shared/RightNav/RightNav';
 import { Outlet } from 'react-router-dom';
+import NavigationBar from '../pages/shared/NavigationBar/NavigationBar';
 
 const Main = () => {
     return (
         <div>
             <Header></Header>
-            <Container>
+            <NavigationBar></NavigationBar>
+            <Container className='mt-5'>
                 <Row>
                     <Col lg={3}>
                         <LeftNav></LeftNav>
