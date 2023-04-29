@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, Card } from 'react-bootstrap';
 import { FaArrowLeft, FaBackward } from 'react-icons/fa';
 import { Link, useLoaderData, useParams } from 'react-router-dom';
+import EditorsInsights from '../EditorsInsight/EditorsInsights';
 
 const News = () => {
     const newsInfo = useLoaderData();
@@ -19,6 +20,7 @@ const News = () => {
                     <Link to={`/category/${category_id}`}><Button variant={"danger"}><FaArrowLeft></FaArrowLeft> All News In This Category</Button></Link>
                 </Card.Body>
             </Card>
+            <EditorsInsights></EditorsInsights>
         </>
     );
 };
