@@ -21,7 +21,7 @@ const Register = () => {
         createUser(email, password)
             .then(result => {
                 const loggedUser = result.user;
-                navigate('/login');
+                navigate('/login')
             })
             .catch(error => {
                 console.log(error);
